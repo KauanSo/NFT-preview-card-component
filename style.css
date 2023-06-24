@@ -15,6 +15,12 @@ body{
     width: 305px;
     position: relative;
 }
+img #overlay{
+    width: 50px;
+    height:auto;
+    
+    
+}
 .img > #overlay{
     position: absolute;
     top: 0;
@@ -22,18 +28,17 @@ body{
     left: 0; 
     right: 0;
     margin: auto;
-    display:none;
-}
-.img  #overlay:hover{
-    display:block;
-   position: absolute;
-    top: 0;
-     bottom: 0;
-    left: 0; 
-    right: 0;
-    margin: auto;
     background-color: hsl(178, 100%, 50%);
+    height: 15%;
+    width: 14%;
+    opacity: 0;
+    cursor: pointer;
+    padding: 111px;    
+    border-radius: 10px;
+    margin-top: 15px;
+    
 }
+
 
 #cardpic{
     margin-left: 20px;
@@ -100,10 +105,7 @@ h3{
     text-align: center;
     margin-right: 40px;
     color:hsl(215, 51%, 70%);
-    
-    
-
-  
+ 
 }
 #line{
     margin-top: 40px;
@@ -120,4 +122,8 @@ strong{
 strong:hover{
     cursor: pointer;
     color: hsl(178, 100%, 50%);
+}
+.img #overlay:hover{
+    opacity: 1;
+    transition: ease-in 0.2s;
 }
